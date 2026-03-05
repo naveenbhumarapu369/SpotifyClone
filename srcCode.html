@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="spotifyc.css">
+</head>
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav_op" style="opacity: 1;">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
+        </div>
+        <label for="srh">
+          <div class="nav_op">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
+        </div>
+        </label>
+      </div>
+      <div class="lib">
+        <div class="options">
+          <div class="lib_op nav_op">
+            <img src="library_icon.png" alt="Library Icon" />
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="lib_box">
+          <div class="box">
+            <p class="boxP1">Create your First PlayList</p>
+            <p class="boxP2">It's Easy We'll Help You</p>
+            <button class="badge">Create PlayList</button>
+          </div>
+          <div class="box">
+            <p class="boxP1">Let's find some podcasts to follow</p>
+            <p class="boxP2">we'll keep you updated on new episodes</p>
+            <button class="badge">Browse podcasts</button>
+          </div>
+          <div class="box">
+            <p class="boxP1">Let's find some podcasts to follow</p>
+            <p class="boxP2">we'll keep you updated on new episodes</p>
+            <button class="badge">Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_cont">
+      <div class="st_nav">
+        <div class="fr">
+          <img src="backward_icon.png" alt="">
+          <img src="forward_icon.png" alt="" class="hide">
+        </div>
+        <div class="search">
+          <input type="text" id="srh" placeholder="Search your loved song here......">
+        </div>
+        <div class="bt">
+          <button class="badge" ><a style="background-color: white; color: black;" href="https://open.spotify.com/premium">Explore Premium</a></button>
+          <button class="badge" style="background-color: black;color: white;">
+            <i class="fa-solid fa-circle-down" style="margin-right: 4px;"></i><a href="https://apps.microsoft.com/detail/9ncbcszsjrsb?launch=true&mode=mini&cid=spotifyweb-store-button&hl=en-US&gl=IN">Install App</a>
+          </button>
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+      <h2>Recently Played</h2>
+      <div class="cards_cont">
+        <div class="card">
+          <img src="card1img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+      </div>
+
+      <h2>Trending now near you</h2>
+      <div class="cards_cont">
+        <div class="card">
+          <img src="card2img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+        <div class="card">
+          <img src="card3img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+        <div class="card">
+          <img src="card4img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+        <div class="card">
+          <img src="card2img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+      </div>
+
+      <h2>Featured Charts</h2>
+      <div class="cards_cont">
+        <div class="card">
+          <img src="card5img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+        <div class="card">
+          <img src="card6img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+        <div class="card">
+          <img src="card1img.jpeg" alt="">
+          <p class="title">Top 50 - Global</p>
+          <p class="info">Your Daily Updates of the most Played...</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="music_player">
+      <div class="cur_play">
+        <img src="card2img.jpeg" alt="">
+        <div class="disc">
+          <p class="s_title">Chikiti</p>
+          <p class="s_art">Anirudh RaviChandra,T.Rajenda...</p>
+        </div>
+      </div>
+
+
+      <input type="checkbox" id="ck">
+
+
+      <div class="mid">
+        <div class="control">
+          <img src="player_icon1.png" alt="" class="ip">
+          <img src="player_icon2.png" alt=""class="ip">
+          <label for="ck"><i class="fa-solid fa-circle-pause"></i></label>
+          <label for="ck"><img src="player_icon3.png" alt=""class="ipp" ></label>
+          <img src="player_icon4.png" alt=""class="ip">
+          <img src="player_icon5.png" alt=""class="ip">
+        </div>
+        <div class="progress">
+          <span class="cur_time">00:00</span>
+          <input type="range" min="0" max="100" class="prog">
+          <span class="f_time">03:33</span>
+        </div>
+      </div>
+      <div class="volu">
+        <i class="fa-solid fa-broadcast-tower" style="color: #1bd760; opacity: 1;"></i>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-ellipsis-h"></i>
+        <i class="fa-solid fa-link"></i>
+        <label for="vl"><i class="fa-solid fa-volume-high"></i></label>
+        <input type="range" id="vl">
+        <i class="fa-solid fa-desktop"></i>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
